@@ -87,7 +87,7 @@ public struct PullToRefreshScrollView<AnimationViewType: View, ContentViewType: 
                 ScrollView(.vertical, showsIndicators: showsIndicators, content: {
                     VStack(spacing: 0, content: {
                         Color.clear
-                            .frame(height: options.pullToRefreshAnimationHeight * scrollViewState.progress)
+                            //.frame(height: options.pullToRefreshAnimationHeight * scrollViewState.progress)
                         contentViewBuilder(geometryProxy.size)
                             .modifier(GeometryGroupModifier())
                     })
